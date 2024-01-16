@@ -34,7 +34,7 @@ function App() {
           {/*glowing div: control the progressive glow trail using radial gradient background image */}
           <div className="relative bg-yellow-20 w-[80%] h-56 mb-16 ctr animate-puls">
             {/* ball to control the numbered boxes illumination */}
-            <div id="ball" className="absolute z-30 w-10 h-10 rounded-full bg-transparent move"></div>
+            <div id="ball" className="absolute z-30 w-10 h-10 rounded-full bg-red-30 move"></div>
            
             {/* rect bottom */}
             <div className="bg-black absolute bottom-0 h-20 left-[1.7px] right-[1px]"></div>
