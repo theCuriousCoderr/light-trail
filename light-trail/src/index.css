@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.ts{
+  transform: perspective(1100PX) rotateX(50deg) rotate(50deg) scale(0.8)
+}
+
+
+.ctr{
+  animation: pulse 6s ease infinite;
+}
+
+.move{
+  animation: move 6s ease-in-out infinite;
+  /* transition: all 4s ease-in-out; */
+}
+@keyframes move{
+  100%{
+      bottom: 0;
+      display: hidden;
+      
+  }
+}
+@keyframes pul{
+  0%{
+      background-color: rgba(255,255,255,0);
+  }
+  100%{
+      background-color: rgba(255,255,255,0.8);
+  }
+}
+@keyframes pulse{
+  0%{
+      background-color:rgba(255, 228, 196, 0.422);
+      /* background-image: radial-gradient(circle,rgba(255,255,255,0.7) 100%); */
+      /* opacity: 0; */
+  }
+  10%{
+      background-image: radial-gradient(circle,rgba(255,255,255,0) 20% ,rgba(255, 166, 0, 0.5) 25%,rgba(255,255,255,0) 60%  );
+  }
+  20%{
+      background-image: radial-gradient(circle,rgba(255,255,255,0) 30%,rgba(255, 166, 0, 0.5) 35%,rgba(255,255,255,0) 70%);
+  }
+  30%{
+      background-image: radial-gradient(circle,rgba(255,255,255,0) 40%,rgba(255, 166, 0, 0.5) 45%,rgba(255,255,255,0) 80%);
+  }
+  40%{
+      background-image: radial-gradient(circle,rgba(255,255,255,0) 50%,rgba(255, 166, 0, 0.5) 55%,rgba(255,255,255,0) 90%);
+  }
+  50%{
+      background-image: radial-gradient(circle,rgba(255,255,255,0) 60%,rgba(255, 166, 0, 0.5) 65%,rgba(255,255,255,0) 90%);
+  }
+  60%{
+      background-image: radial-gradient(circle,rgba(255,255,255,0) 70%,rgba(255, 166, 0, 0.5) 75%,rgba(255,255,255,0) 90%);
+  }
+  70%{
+      /* background-color: green; */
+      background-image: linear-gradient(rgba(255,255,255,0.3) 70%,rgba(255, 166, 0, 0.5) 30%);
+  }
+  80%{
+      background-image: linear-gradient(rgba(255,255,255,0.2) 80%,rgba(255, 166, 0, 0.5) 20%);
+      /* background-color: rgb(255,255,255,0.6); */
+  }
+  90%{
+      /* background-color: rgb(255,255,255,0.9); */
+      background-image: linear-gradient(rgba(255,255,255,0.1) 90%,rgba(255, 166, 0, 0.5) 10%);
+  }
+  100%{
+      /* background-color: rgb(255,255,255,0.9); */
+      background-image: linear-gradient(rgba(255,255,255,0.1) 95%,rgba(255, 166, 0, 0.5) 5%);
+  }
+}
